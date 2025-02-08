@@ -1,0 +1,24 @@
+#!/bin/bash
+
+
+student="Sarah"
+echo " Hello ${student}"
+
+echo "${PATH}"
+echo "${USER}"
+echo "${HOSTTYPE}"
+
+name="bimal"
+
+echo $SHELL
+
+
+echo ${name^^}
+echo ${#name}
+
+number=0123456789
+
+echo ${number:0:2}
+echo ${number:3}
+
+echo $(date)
