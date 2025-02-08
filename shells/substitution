@@ -1,7 +1,0 @@
-#!/bin/bash
-
-time=$(date +%H:%m:%S)
-
-echo "${time}"
-
-echo "$(pwd)"

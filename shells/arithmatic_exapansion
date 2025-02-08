@@ -1,8 +1,0 @@
-#!/bin/bash
-
-
-#follows with ((<operation>))
-
-if [[ 2 -gt 1 ]]; then
-  echo "fff"
-fi
