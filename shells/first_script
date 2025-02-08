@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#Author:Bimal Kaluarachchi
-#Created: 01/02/2025
-
-
-tar -cvf ~/PycharmProjects/terraform/shells/first_script_"$(date +%d-%m-%y_%H-%M-%S)".tar ~/* 2>/dev/null
-
-exit 0

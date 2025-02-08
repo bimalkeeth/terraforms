@@ -1,2 +1,0 @@
-VPC created on Sat Feb 8 11:58:42 AEDT 2025 and VPC ID: vpc-02afa6d2cb43819e4
-VPC created on Sat Feb 8 12:16:55 AEDT 2025 and VPC ID: vpc-08984e78e046a9841
