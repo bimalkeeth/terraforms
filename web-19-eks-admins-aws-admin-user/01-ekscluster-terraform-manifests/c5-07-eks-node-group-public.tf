@@ -1,7 +1,7 @@
 resource "aws_eks_node_group" "eks_ng_public" {
   cluster_name    = aws_eks_cluster.eks-cluster.name
   node_group_name = "${local.name}-eks-ng-public"
-  node_role_arn   = aws_iam_role.eks-node-group.arn
+  node_role_arn   = aws_iam_role.eks-node-group_role.arn
 
   subnet_ids     = module.vpc.public_subnets
   ami_type       = "AL2_x86_64"
