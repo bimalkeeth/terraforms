@@ -5,6 +5,11 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = "2.35.0"
+    }
   }
 
   backend "s3" {
@@ -15,6 +20,7 @@ terraform {
 
     dynamodb_table = "dev-ekscluster"
   }
+
 }
 
 provider "aws" {

@@ -35,7 +35,7 @@ locals {
 
 #resource for config map
 resource "kubernetes_config_map_v1" "aws_auth" {
-  depends_on = [aws_eks_cluster.eks-cluster]
+  depends_on = [aws_eks_cluster.eks_cluster]
   metadata {
     name      = "aws-auth"
     namespace = "kube-system"
