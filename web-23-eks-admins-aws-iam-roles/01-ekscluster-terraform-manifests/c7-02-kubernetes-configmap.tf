@@ -15,6 +15,11 @@ locals {
       rolearn  = aws_iam_role.eks-node-group_role.arn
       username = "system:node:{{EC2PrivateDNSName}}"
       groups   =  ["system:bootstrappers", "system:nodes"]
+    },
+    {
+      rolearn  = aws_iam_role.eks_admin_role.arn
+      username = "eks-admin"
+      groups   =  ["system:masters"]
     }
   ]
 
