@@ -27,21 +27,21 @@ resource "helm_release" "loadbalancer_controller" {
 
   set {
     name  = "serviceAccount.annotations.eks\\.amazonaws\\.com/role-arn"
-    value = "${aws_iam_role.lb_iam_role.arn}"
+    value = aws_iam_role.lb_iam_role.arn
   }
 
   set {
     name  = "vpcId"
-    value = "${data.terraform_remote_state.eks.outputs.vpc_id}"
+    value = data.terraform_remote_state.eks.outputs.vpc_id
   }
 
   set {
     name  = "region"
-    value = "${var.aws_region}"
+    value = var.aws_region
   }
 
   set {
     name  = "clusterName"
-    value = "${data.terraform_remote_state.eks.outputs.cluster_id}"
+    value = data.terraform_remote_state.eks.outputs.cluster_id
   }
 }
