@@ -5,6 +5,15 @@ metadata:
   labels:
     run: test
 spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+              - key: run
+                operator: In
+                values:
+                  - carpenter
   containers:
     - name: test
       image: bhabanisn/color-frontend
