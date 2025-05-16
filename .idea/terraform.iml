@@ -3,6 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/web-26-eks-load-balancer/01-ekscluster-terraform-manifests/.terraform" />
+      <excludeFolder url="file://$MODULE_DIR$/web-27-eks-ingress-basics/01-ekscluster-terraform-manifests/.terraform" />
+      <excludeFolder url="file://$MODULE_DIR$/web-28-eks-ingress-context-path-routing/01-ekscluster-terraform-manifests/.terraform" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9 (terraform)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
